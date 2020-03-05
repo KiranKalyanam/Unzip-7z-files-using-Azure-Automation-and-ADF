@@ -14,6 +14,9 @@ Before we dive deep down into the how to, I am assuming that you already know ho
   2. Create an Azure Automation Account and Import Module "7Zip4Powershell"   
   3. Create a Powershell Runbook - Use uploaded PS script  to Download file from Blob Storage, Expand the file and Upload to Blob Storage. 
   4. Add a Webhook to the Runbook and copy the URL  
-  5. In ADF pipeline - Use the webhook activity to call the Runbook to execute.  
+  5. In ADF pipeline - Use the webhook activity to call the Runbook to execute. 
+  
+      ![ADF pipeline](https://github.com/KiranKalyanam/KK-Data-AI/blob/master/Capture1.PNG)
+
 
 
