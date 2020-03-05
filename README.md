@@ -1,5 +1,4 @@
-# KK-Data-AI
-### Unzip 7z files using Azure Automation Runbooks and Azure Data Factory
+# Unzip 7z files using Azure Automation Runbooks and Azure Data Factory
 
 I have recently come across a Customer who is migrating On-prem DW workloads to Azure cloud (using Azure Synapse Analytics, Data Factory, Azure Storage, Power BI) and has a scenario where they have a bunch of 7z compressed data files that are being unzipped using a utility installed in a VM for further processing in their data warehouse. Now the Customer is using Azure Data Factory for Orchestrating the data pipelines and would like to do the unzipping of files as part of the end to end workflow.
 
@@ -26,4 +25,6 @@ Before we dive deep down into the how to, I am assuming that you already know ho
       ![ADF pipeline](https://github.com/KiranKalyanam/KK-Data-AI/blob/master/Capture1.PNG)
 
 
+While there are many ways to unzip 7z files through Azure Data Factory such as using Azure Functions or using custom activities, I found using Powershell Runbooks was the simplest of all.
 
+Hope this helps you!
