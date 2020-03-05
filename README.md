@@ -9,10 +9,10 @@ This post is an attempt to help all the Azure data engineers using ADF and come 
 
 Before we dive deep down into the how to, I am assuming that you already know how to provision Azure Data Factory, Azure Automation, Blob Storage.  If not, it's pretty easy to get started.
 
-### High Level workflow to get this done
+### Workflow to get this done
   1. Using ADF, Copy (binary) files from On prem FTP server to a container in Blob Storage  
   2. Create an Azure Automation Account and Import Module "7Zip4Powershell"   
-  3. Create a Powershell Runbook - PS script to Download file from Blob Storage, Expand the file and Upload file to Blob Storage.  
+  3. Create a Powershell Runbook - Use uploaded PS script  to Download file from Blob Storage, Expand the file and Upload to Blob Storage. 
   4. Add a Webhook to the Runbook and copy the URL  
   5. In ADF pipeline - Use the webhook activity to call the Runbook to execute.  
 
